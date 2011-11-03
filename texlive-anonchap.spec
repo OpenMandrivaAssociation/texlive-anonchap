@@ -1,3 +1,9 @@
+# revision 17049
+# category Package
+# catalog-ctan /macros/latex/contrib/anonchap
+# catalog-date 2010-02-23 16:03:07 +0100
+# catalog-license lppl
+# catalog-version 1.1a
 Name:		texlive-anonchap
 Version:	1.1a
 Release:	1
@@ -41,6 +47,7 @@ ante.
 %{_texmfdistdir}/tex/latex/anonchap/anonchap.sty
 %doc %{_texmfdistdir}/doc/latex/anonchap/anonchap.pdf
 %doc %{_texmfdistdir}/doc/latex/anonchap/anonchap.tex
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -51,3 +58,5 @@ ante.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
