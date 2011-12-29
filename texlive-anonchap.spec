@@ -33,7 +33,6 @@ ante.
 	%{_sbindir}/texlive.post
     fi
 
-
 #-----------------------------------------------------------------------
 %files
 %{_texmfdistdir}/tex/latex/anonchap/anonchap.sty
