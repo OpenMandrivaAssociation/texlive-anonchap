@@ -6,7 +6,7 @@
 # catalog-version 1.1a
 Name:		texlive-anonchap
 Version:	1.1a
-Release:	10
+Release:	11
 Summary:	Make chapters be typeset like sections
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/anonchap
