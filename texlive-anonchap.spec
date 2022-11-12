@@ -1,18 +1,12 @@
-# revision 17049
-# category Package
-# catalog-ctan /macros/latex/contrib/anonchap
-# catalog-date 2010-02-23 16:03:07 +0100
-# catalog-license lppl
-# catalog-version 1.1a
 Name:		texlive-anonchap
-Version:	1.1a
-Release:	12
+Version:	17049
+Release:	1
 Summary:	Make chapters be typeset like sections
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/anonchap
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/anonchap.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/anonchap.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/anonchap.r17049.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/anonchap.doc.r17049.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -26,12 +20,12 @@ alter). The \restorechapter command restores the status quo
 ante.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -41,25 +35,10 @@ ante.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Tue Jan 03 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.1a-2
-+ Revision: 749250
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 1.1a-1
-+ Revision: 717831
-- texlive-anonchap
-- texlive-anonchap
-- texlive-anonchap
-- texlive-anonchap
-- texlive-anonchap
-
