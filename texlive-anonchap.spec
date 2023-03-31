@@ -1,6 +1,6 @@
 Name:		texlive-anonchap
 Version:	17049
-Release:	1
+Release:	2
 Summary:	Make chapters be typeset like sections
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/anonchap
