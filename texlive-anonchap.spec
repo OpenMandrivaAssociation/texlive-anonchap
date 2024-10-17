@@ -3,7 +3,7 @@ Version:	17049
 Release:	2
 Summary:	Make chapters be typeset like sections
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/anonchap
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/anonchap
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/anonchap.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/anonchap.doc.r%{version}.tar.xz
